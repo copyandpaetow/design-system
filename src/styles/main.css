@@ -1,0 +1,4 @@
+@layer reset, theme, components;
+
+@import "./resets.css" layer(reset);
+@import "./theme.css" layer(theme);

@@ -1,0 +1,28 @@
+---
+import ContentBox from "../../components/content-box.astro";
+---
+
+<ContentBox title="Form Controls">
+	<label for="">
+		<input type="checkbox" />
+	</label>
+	<label>
+		<input name="terms" type="checkbox" role="switch" />
+		switch
+	</label>
+	<label for="">
+		<input type="radio" />
+	</label>
+	<label>
+		Brightness
+		<input type="range" />
+	</label>
+	<select name="favorite-cuisine" aria-label="Select your favorite cuisine..." required>
+		<option selected disabled value=""> Select your favorite cuisine... </option>
+		<option>Italian</option>
+		<option>Japanese</option>
+		<option>Indian</option>
+		<option>Thai</option>
+		<option>French</option>
+	</select>
+</ContentBox>

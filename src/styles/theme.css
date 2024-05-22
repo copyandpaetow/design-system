@@ -1,0 +1,18 @@
+:root {
+	/* Step -2: 9.0045px → 11.2556px */
+	--size--2: clamp(0.5628rem, 0.5138rem + 0.2447vi, 0.7035rem);
+	/* Step -1: 12.003px → 15.0038px */
+	--size--1: clamp(0.7502rem, 0.685rem + 0.3262vi, 0.9377rem);
+	/* Step 0: 16px → 20px */
+	--size-0: clamp(1rem, 0.913rem + 0.4348vi, 1.25rem);
+	/* Step 1: 21.328px → 26.66px */
+	--size-1: clamp(1.333rem, 1.2171rem + 0.5796vi, 1.6663rem);
+	/* Step 2: 28.4302px → 35.5378px */
+	--size-2: clamp(1.7769rem, 1.6224rem + 0.7726vi, 2.2211rem);
+	/* Step 3: 37.8975px → 47.3719px */
+	--size-3: clamp(2.3686rem, 2.1626rem + 1.0298vi, 2.9607rem);
+	/* Step 4: 50.5174px → 63.1467px */
+	--size-4: clamp(3.1573rem, 2.8828rem + 1.3728vi, 3.9467rem);
+	/* Step 5: 67.3396px → 84.1745px */
+	--size-5: clamp(4.2087rem, 3.8428rem + 1.8299vi, 5.2609rem);
+}

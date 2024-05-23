@@ -1,23 +1,34 @@
 ---
-import Accordions from "./accordions.astro";
-import Buttons from "./buttons.astro";
-import FormControls from "./form-controls.astro";
-import FormInputs from "./form-inputs.astro";
-import Links from "./links.astro";
-import Lists from "./lists.astro";
-import Texts from "./texts.astro";
-import Popups from "./popups.astro";
+import { title as accordionsTitle } from "./accordions.astro";
+import { title as buttonsTitle } from "./buttons.astro";
+import { title as formControlsTitle } from "./form-controls.astro";
+import { title as formInputsTitle } from "./form-inputs.astro";
+import { title as linksTitle } from "./links.astro";
+import { title as listsTitle } from "./lists.astro";
+import { title as textsTitle } from "./texts.astro";
+import { title as popupTitle } from "./popups.astro";
+import { title as headingsTitle } from "./headings.astro";
+
+export const previewData = {
+	[buttonsTitle]: await Astro.glob("./buttons.astro"),
+	[linksTitle]: await Astro.glob("./links.astro"),
+	[accordionsTitle]: await Astro.glob("./accordions.astro"),
+	[formControlsTitle]: await Astro.glob("./form-controls.astro"),
+	[formInputsTitle]: await Astro.glob("./form-inputs.astro"),
+	[textsTitle]: await Astro.glob("./texts.astro"),
+	[popupTitle]: await Astro.glob("./popups.astro"),
+	[listsTitle]: await Astro.glob("./lists.astro"),
+	[headingsTitle]: await Astro.glob("./headings.astro"),
+};
 ---
 
 <main>
-	<Buttons />
-	<Links />
-	<Texts />
-	<Lists />
-	<Accordions />
-	<Popups />
-	<FormControls />
-	<FormInputs />
+	{
+		Object.entries(previewData).map(([key, value]) => {
+			const Component = value[0].default;
+			return <Component title={key} />;
+		})
+	}
 </main>
 
 <style>

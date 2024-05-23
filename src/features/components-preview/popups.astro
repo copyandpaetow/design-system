@@ -1,8 +1,10 @@
 ---
 import ContentBox from "../../components/content-box.astro";
+
+export const title = "Popups";
 ---
 
-<ContentBox title="Dialog">
+<ContentBox title={title}>
 	<dialog id="dialog" popover>something</dialog>
 	<button popovertarget="dialog">open dialog</button>
 </ContentBox>

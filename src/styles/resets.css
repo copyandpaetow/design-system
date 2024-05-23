@@ -80,6 +80,7 @@
 	outline: var(--outline-width, var(--outline-size)) var(--outline-style, solid)
 		var(--outline-color, currentColor);
 	outline-offset: var(--outline-offset, var(--outline-size));
+	scroll-padding-block-end: 8vh;
 }
 
 :target {
@@ -87,5 +88,4 @@
 }
 :focus {
 	scroll-padding-block-end: 8vh;
-	outline: none;
 }

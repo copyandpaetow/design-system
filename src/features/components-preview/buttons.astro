@@ -1,10 +1,13 @@
 ---
+import Button from "../../components/button.astro";
 import ContentBox from "../../components/content-box.astro";
+
+export const title = "Buttons";
 ---
 
-<ContentBox title="buttons">
-	<button>primary</button>
-	<button>secondary</button>
-	<button>tertiary</button>
-	<button>none</button>
+<ContentBox title={title}>
+	<Button variant="primary">primary</Button>
+	<Button variant="secondary">secondary</Button>
+	<Button variant="tertiary">tertiary</Button>
+	<Button variant="none">none</Button>
 </ContentBox>

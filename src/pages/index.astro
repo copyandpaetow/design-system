@@ -31,7 +31,6 @@ import { titleToId } from "../utils/element-ids";
 			"nav main"
 			"nav footer";
 		grid-template-columns: 1fr minmax(18rem, 60rem) 1fr;
-		align-items: start;
 
 		> nav {
 			grid-area: nav;
@@ -39,9 +38,12 @@ import { titleToId } from "../utils/element-ids";
 			grid-auto-flow: row;
 			grid-auto-rows: min-content;
 			padding: 1rem;
+			padding-top: 3rem;
 			position: sticky;
 			top: 0;
 			max-height: 100dvh;
+			align-self: start;
+			justify-self: center;
 		}
 
 		> header {

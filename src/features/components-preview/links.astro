@@ -5,8 +5,8 @@ export const title = "Links";
 ---
 
 <ContentBox title={title}>
-	<a href="#">anchor link</a>
-	<a href="#" aria-current="page">page link</a>
-	<a href="#">external link</a>
-	<a href="#">unstyled</a>
+	<a href={`#${title}`}>anchor link</a>
+	<a href="/" aria-current="page">page link</a>
+	<a href="https://www.wikipedia.org">external link</a>
+	<a href="#target" role="button" data-variant="secondary">button-like</a>
 </ContentBox>

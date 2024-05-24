@@ -8,6 +8,7 @@ import { title as listsTitle } from "./lists.astro";
 import { title as textsTitle } from "./texts.astro";
 import { title as popupTitle } from "./popups.astro";
 import { title as headingsTitle } from "./headings.astro";
+import { title as iconsTitle } from "./icons.astro";
 
 export const previewData = {
 	[buttonsTitle]: await Astro.glob("./buttons.astro"),
@@ -19,6 +20,7 @@ export const previewData = {
 	[popupTitle]: await Astro.glob("./popups.astro"),
 	[listsTitle]: await Astro.glob("./lists.astro"),
 	[headingsTitle]: await Astro.glob("./headings.astro"),
+	[iconsTitle]: await Astro.glob("./icons.astro"),
 };
 ---
 
@@ -34,5 +36,6 @@ export const previewData = {
 <style>
 	main {
 		display: grid;
+		gap: 0.5rem;
 	}
 </style>
